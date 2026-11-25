@@ -1,0 +1,122 @@
+/* ═══════════════════════════════════════════════
+   Clash of Codes — Design Tokens
+   theme: custom/arena  genre: playful-atmospheric
+   posture: committed   stamp: arena: ember/graphite
+   Hallmark design system compliance: OKLCH, The Floor
+   ═══════════════════════════════════════════════ */
+
+:root {
+  /* ── Paper (dark ground, hue 270 — deep indigo-slate) ── */
+  --color-paper:   oklch(11% 0.025 270);   /* near-black with a violet cast */
+  --color-paper-2: oklch(15% 0.028 270);   /* elevated surface */
+  --color-paper-3: oklch(19.5% 0.032 270); /* highest surface / hover */
+
+  /* ── Ink (warm white, hue 60) ── */
+  --color-ink:   oklch(95% 0.008 60);
+  --color-ink-2: oklch(85% 0.012 60);
+  --color-muted: oklch(64% 0.018 265);
+
+  /* ── Rules ── */
+  --color-rule:   oklch(26% 0.035 270);
+  --color-rule-2: oklch(36% 0.04 268);
+
+  /* ── Accent: Ember / Magma (Clan Alpha) ── */
+  --color-accent:      oklch(74% 0.22 45);   /* radiant molten amber-orange */
+  --color-accent-2:    oklch(85% 0.19 55);    /* solar flare ember for highlights */
+  --color-accent-ink:  oklch(12% 0.04 45);    /* text on accent fills */
+  --color-accent-soft: oklch(24% 0.08 45);    /* magma wash for backgrounds */
+  --color-accent-wash: oklch(17% 0.05 45);    /* subtle ember aura */
+
+  /* ── Signal: Azure / Plasma (Clan Omega) ── */
+  --color-cool:      oklch(76% 0.17 215);     /* electric cyan-plasma */
+  --color-cool-soft: oklch(24% 0.07 215);
+  --color-cool-wash: oklch(17% 0.05 215);
+
+  /* ── Competitive Rank Tiers (Hallmark Arena Metallurgy) ── */
+  --tier-bronze:      oklch(64% 0.14 45);
+  --tier-silver:      oklch(82% 0.03 260);
+  --tier-gold:        oklch(88% 0.21 85);
+  --tier-platinum:    oklch(84% 0.14 185);
+  --tier-diamond:     oklch(82% 0.19 240);
+  --tier-champion:    oklch(76% 0.26 325);
+
+  /* ── Radiant Glows & Shadows ── */
+  --glow-accent:      0 0 24px -2px oklch(74% 0.22 45 / 0.5);
+  --glow-cool:        0 0 24px -2px oklch(76% 0.17 215 / 0.5);
+  --glow-gold:        0 0 28px -2px oklch(88% 0.21 85 / 0.6);
+  --glow-champion:    0 0 28px -2px oklch(76% 0.26 325 / 0.6);
+  --border-rim:       1px solid rgba(255, 255, 255, 0.08);
+
+  /* ── Semantic: Status ── */
+  --color-ok:       oklch(76% 0.16 150);   /* accepted / correct */
+  --color-ok-soft:  oklch(20% 0.04 150);
+  --color-bad:      oklch(68% 0.18 25);    /* wrong answer / error */
+  --color-bad-soft: oklch(20% 0.04 25);
+  --color-warn:     oklch(80% 0.15 85);    /* TLE, MLE */
+  --color-warn-soft: oklch(20% 0.04 85);
+
+  /* ── Focus ── */
+  --color-focus: oklch(72% 0.195 45);
+
+  /* ── Star colours ── */
+  --color-star-empty: oklch(30% 0.02 265);
+  --color-star-1:     oklch(72% 0.195 45);   /* ember */
+  --color-star-2:     oklch(80% 0.18 55);    /* brighter ember */
+  --color-star-3:     oklch(88% 0.20 80);    /* gold */
+
+  /* ── Typography ── */
+  --font-display: "Saira Condensed", ui-sans-serif, system-ui, sans-serif;
+  --font-body:    "Chivo", ui-sans-serif, system-ui, sans-serif;
+  --font-outlier: "JetBrains Mono", ui-monospace, monospace;
+
+  /* ── Sizes (1.25 ratio from 16px body) ── */
+  --text-display:   clamp(3.5rem, 6vw, 5.25rem);
+  --text-display-s: clamp(2.5rem, 4vw, 3.75rem);
+  --text-section:   clamp(2rem, 3.5vw, 3.25rem);
+  --text-title:     clamp(1.25rem, 1.6vw, 1.5625rem);
+  --text-lead:      1.3125rem;
+  --text-md:        1rem;      /* 16px base body */
+  --text-sm:        0.875rem;  /* 14px labels */
+  --text-xs:        0.75rem;   /* 12px meta */
+
+  /* ── Spacing scale ── */
+  --space-3xs: 2px;  --space-2xs: 4px;  --space-xs: 8px;
+  --space-sm: 12px;  --space-md: 16px;  --space-lg: 24px;
+  --space-xl: 40px;  --space-2xl: 64px; --space-3xl: 96px;
+  --space-4xl: 144px;
+
+  /* ── Layout ── */
+  --container: 1440px;
+  --gutter: 48px;
+  --gap-columns: 24px;
+
+  /* ── Surfaces ── */
+  --radius-card: 8px;
+  --radius-input: 6px;
+  --radius-pill: 999px;
+  --rule-hair: 1px;
+  --rule-bar: 2px;
+
+  /* ── Shadows & Elevation (Dark mode: lightness ladder + press physics) ── */
+  --shadow-card: inset 0 0 0 1px var(--color-rule);
+  --shadow-press: 4px 4px 0 var(--color-accent);
+  --shadow-press-cool: 4px 4px 0 var(--color-cool);
+
+  /* ── Motion: Brisk (0.85-0.9x scale) ── */
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long:  420ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.64, 0, 0.78, 0);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+
+  /* ── Z-layers ── */
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-sticky-nav: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+}
+

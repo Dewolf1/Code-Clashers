@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/base.css";
+
+/* Tailwind theme mappings to our Hallmark Arena tokens */
+@theme {
+  --color-paper: var(--color-paper);
+  --color-paper-2: var(--color-paper-2);
+  --color-paper-3: var(--color-paper-3);
+  --color-ink: var(--color-ink);
+  --color-ink-2: var(--color-ink-2);
+  --color-muted: var(--color-muted);
+  --color-rule: var(--color-rule);
+  --color-rule-2: var(--color-rule-2);
+  --color-accent: var(--color-accent);
+  --color-accent-2: var(--color-accent-2);
+  --color-accent-ink: var(--color-accent-ink);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-cool: var(--color-cool);
+  --color-cool-soft: var(--color-cool-soft);
+  --color-ok: var(--color-ok);
+  --color-bad: var(--color-bad);
+  --color-warn: var(--color-warn);
+  --tier-bronze: var(--tier-bronze);
+  --tier-silver: var(--tier-silver);
+  --tier-gold: var(--tier-gold);
+  --tier-platinum: var(--tier-platinum);
+  --tier-diamond: var(--tier-diamond);
+  --tier-champion: var(--tier-champion);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-outlier);
+}

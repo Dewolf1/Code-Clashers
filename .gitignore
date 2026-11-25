@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Production / Next.js
+.next/
+out/
+build/
+dist/
+
+# Environment files
+.env*.local
+.env
+!.env.example
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Test coverage
+coverage/
+
+# Local project notes & changelogs (excluded from remote push)
+capsoule.md
+capsule.md
+changes.md
+chnages.md
+PROJECT_EXPLAINER.md
